@@ -4,71 +4,85 @@ import ProductCard from "./components/ProductCard";
 import TeamMember from "./components/TeamMember";
 import TryOnModal from "./components/TryOnModal";
 
-// Sample data - replace with your actual data
+// Import product images
+import eyeglass1 from "./assets/products/eyeglass1.png";
+import eyeglass2 from "./assets/products/eyeglass2.png";
+import eyeglass3 from "./assets/products/eyeglass3.png";
+
+// Import team member images
+import teamMember1 from "./assets/teamMembers/teamMember1.jpg";
+import teamMember2 from "./assets/teamMembers/teamMember2.jpg";
+import teamMember3 from "./assets/teamMembers/teamMember3.jpg";
+import teamMember4 from "./assets/teamMembers/teamMember4.jpg";
+import teamMember5 from "./assets/teamMembers/teamMember5.jpg";
+
+// Sample data with product images
 const sampleGlasses = [
   {
     id: 1,
     name: "Classic Aviator",
-    image: "https://via.placeholder.com/300x200?text=Aviator+Glasses",
+    image: eyeglass1,
+    description: "Timeless aviator style with gold frame",
   },
   {
     id: 2,
     name: "Modern Wayfarer",
-    image: "https://via.placeholder.com/300x200?text=Wayfarer+Glasses",
+    image: eyeglass2,
+    description: "Contemporary take on the iconic wayfarer design",
   },
   {
     id: 3,
     name: "Round Metal",
-    image: "https://via.placeholder.com/300x200?text=Round+Metal+Glasses",
+    image: eyeglass3,
+    description: "Vintage-inspired round metal frames",
   },
-  // Add more glasses as needed
 ];
 
 const teamMembers = [
   {
     id: 1,
-    name: "Team Member 1",
+    name: "Ahmed Mohamed",
     role: "AI Engineer",
     roleDescription:
-      "Specializing in computer vision and deep learning models for virtual try-on technology",
+      "Specializing in facial recognition and landmark detection for precise virtual eyewear placement",
     linkedIn: "https://linkedin.com",
-    image: "https://via.placeholder.com/150",
+    image: teamMember1,
   },
   {
     id: 2,
-    name: "Team Member 2",
-    role: "Frontend Developer",
+    name: "Omar Mohamed",
+    role: "AI Engineer",
     roleDescription:
-      "Creating seamless and intuitive user experiences with modern web technologies",
+      "Focusing on real-time 3D modeling and rendering of eyewear using advanced computer vision techniques",
     linkedIn: "https://linkedin.com",
-    image: "https://via.placeholder.com/150",
+    image: teamMember2,
   },
   {
     id: 3,
-    name: "Team Member 3",
-    role: "UI/UX Designer",
+    name: "Ziad Ahmed",
+    role: "Full Stack Developer",
     roleDescription:
-      "Crafting beautiful and user-friendly interfaces with a focus on accessibility and user experience",
+      "Architecting the backend infrastructure using Node.js and AWS, ensuring scalable and secure processing of virtual try-on requests",
     linkedIn: "https://linkedin.com",
-    image: "https://via.placeholder.com/150",
+    image: teamMember3,
   },
   {
     id: 4,
-    name: "Team Member 4",
-    role: "Backend Developer",
+    name: "Ziad Tamer",
+    role: "AI Engineer",
     roleDescription:
-      "Building robust and scalable server infrastructure to support our virtual try-on platform",
+      "Expert in deep learning algorithms for realistic lighting and shadow simulation in virtual try-on experiences",
     linkedIn: "https://linkedin.com",
-    image: "https://via.placeholder.com/150",
+    image: teamMember4,
   },
   {
     id: 5,
-    name: "Team Member 5",
-    role: "Machine Learning Engineer",
+    name: "Amir Salama",
+    role: "Full Stack Developer",
     roleDescription:
-      "Developing and optimizing AI models for accurate virtual eyewear fitting and face detection",
+      "Leading the frontend development with React and Three.js, creating immersive 3D try-on experiences and responsive user interfaces",
     linkedIn: "https://linkedin.com",
-    image: "https://via.placeholder.com/150",
+    image: teamMember5,
   },
 ];
 

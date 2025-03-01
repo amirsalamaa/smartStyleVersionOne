@@ -1,18 +1,19 @@
 import PropTypes from "prop-types";
 
-const ProductCard = ({ image, name, onTryOn }) => {
+const ProductCard = ({ image, name, description, onTryOn }) => {
   return (
     <div className="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105 group">
-      <div className="aspect-square overflow-hidden relative">
+      <div className="relative w-full h-64 overflow-hidden">
         <img
           src={image}
           alt={name}
-          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+          className="w-full h-full object-contain p-4 transition-transform duration-300 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300" />
       </div>
       <div className="p-6">
-        <h3 className="text-xl font-semibold text-gray-900 mb-3">{name}</h3>
+        <h3 className="text-xl font-semibold text-gray-900 mb-2">{name}</h3>
+        <p className="text-gray-600 mb-4 text-sm">{description}</p>
         <button
           onClick={onTryOn}
           className="w-full bg-blue-600 text-white py-3 rounded-xl font-medium hover:bg-blue-700 transition-colors flex items-center justify-center space-x-2"
@@ -46,6 +47,7 @@ const ProductCard = ({ image, name, onTryOn }) => {
 ProductCard.propTypes = {
   image: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
   onTryOn: PropTypes.func.isRequired,
 };
 
